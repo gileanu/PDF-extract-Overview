@@ -1,6 +1,8 @@
 # PDF-extract-Overview
 Script to extract an "Overview" image for email attachments.<br>
 
+Project status: lots of TODO:s (just started)
+
 ## The Problem to solve:
 When sending website reports to clients, as an added feature we embed an "Overview" image inside the email, the overview contains a breakdown of the updates, security status, number of backups, uptime of the website and other information.<br>
 
