@@ -12,10 +12,11 @@ The first step into making the process more efficient was, when uploading the ne
 
 Another breakthrough was using Apple Shortcuts to crop the .pdf and save the image with a few clicks:<br>
 
-![Alt text](Apple_Shortcuts_Script.png)
+![Apple Shortcut](Apple_Shortcuts_Script.png)
 
-https://www.icloud.com/shortcuts/2dc4829be41b4dd68b53049ed14f531a
+[Apple Shortcuts link](https://www.icloud.com/shortcuts/2dc4829be41b4dd68b53049ed14f531a)
 
+Currently, using the Apple shortcut has proved to be very efficient, but there is still a time loss with choosing which is the Target page, keeping the Original file and the output file, and uploading it myself to the website.<br>
 
 ## The "Why":
 
@@ -24,3 +25,9 @@ I want a program that will take as input the target .pdf file, and export the ex
 ## The "How":
 
 Using Python and PyPDF2 to extract the target .pdf page, pdf2image to convert the .pdf to .jpeg and find a way to upload it to the backend of my website.<br>
+
+Using the [test.pdf](test.pdf), the [main.py](main.py) program should take the test.pdf file, go directly to page 4, crop it, convert it to .jpeg, ask "For which client is this Overview for?" and upload it.<br>
+
+The Cropped area, highlighted in red:<br>
+
+![Crop Area](Crop-Area.png)
