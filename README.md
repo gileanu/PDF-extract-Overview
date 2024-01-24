@@ -1,7 +1,7 @@
 # PDF-extract-Overview
 Script to extract an "Overview" image for email attachments.<br>
 
-Project status: lots of TODO:s (just started)
+Project status: I can extract the Target page and crop it to the exact dimentions.
 
 ## The Problem to solve:
 When sending website reports to clients, as an added feature we embed an "Overview" image inside the email, the overview contains a breakdown of the updates, security status, number of backups, uptime of the website and other information.<br>
@@ -23,4 +23,4 @@ I want a program that will take as input the target .pdf file, and export the ex
 
 ## The "How":
 
-Using Python and PyPDF2 to extract the pdf, PyPDFtoImage to convert the .pdf to .jpeg and find a way to upload it to the backend of my website.<br>
+Using Python and PyPDF2 to extract the target .pdf page, pdf2image to convert the .pdf to .jpeg and find a way to upload it to the backend of my website.<br>
