@@ -1,7 +1,12 @@
+import sys
 from PyPDF2 import PdfWriter, PdfReader
 from PyPDF2.generic import RectangleObject
 
-reader = PdfReader("test1.pdf")
+if len(sys.argv) !=  2:
+    print("Invalid command line argument.")
+    sys.exit("USAGE: main.py <file.pdf>")
+
+reader = PdfReader(sys.argv[1])
 writer = PdfWriter()
 
 targetPage = reader.pages[3]
